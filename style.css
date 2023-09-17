@@ -1,0 +1,51 @@
+/* Estilos base */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    text-align: center;
+    width: 80%; /* Alterado para 80% em telas grandes */
+    max-width: 200px; /* Largura máxima para evitar que fique muito largo */
+    background-color: #0a2435;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui preenchimento na largura */
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    margin-top: 20px; /* Reduzido o espaço superior */
+}
+
+#bt {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Reduzido o espaço superior */
+    transition: all 0.5s;
+}
+
+#bt:hover {
+    background-color: #1d74ad;
+    transform: scale(1.03);
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .box {
+        width: 90%; /* Ajuste para telas menores */
+    }
+}
